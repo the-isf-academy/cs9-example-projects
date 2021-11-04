@@ -19,8 +19,17 @@ Here's what is included:
 To run the animation, type `python3 project.py` into the terminal
 
 ## Settings
-I didn't add any settings
+SLEEPTIME affects the time in between each frame. The higher the sleeptime, the slower the animation will move.
+NUMFRAMES is the number of frames in the animation. The higher the sleeptime, the longer the flower will keep spin.
+NUMREPEATS is the number of times the animation repeats
+SCREENWIDTH is the width of the screen
+SCREENHEIGHT is the height of the screen
+FILLCOLOR is the color of the clusters. If it's set to "random" the color will be random.
+OUTLINECOLOR is the color of the outline of the clusters. If it's set to "random" the color will be random.
+
 
 ## Modules
-I wrote the helpers module, and it helps create different parts the animation
-with the draw() draw_0() draw_1() draw_2() and draw_3() functions.
+I wrote the `helpers` module, and it helps create different parts the animation.
+The draw_kite() function creates the smallest unit of the drawing.
+The draw_cluster() function draws several "kites" so that it creates one petal of the drawing
+The draw_circle() function draws many of the clusters, radiating out from one point. How many it draws will depend on the length parameter.
